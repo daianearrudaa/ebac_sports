@@ -7,7 +7,7 @@ import api from '../services/api'
 export const store = configureStore({
   reducer: {
     carrinho: carrinhoReducer,
-    favoritoReducer,
+    favoritos: favoritoReducer,
     [api.reducerPath]: api.reducer
   },
   middleware: (getDefaultMiddleware) =>
@@ -15,3 +15,4 @@ export const store = configureStore({
 })
 
 export type RootReducer = ReturnType<typeof store.getState>
+export default store

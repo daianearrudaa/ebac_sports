@@ -18,7 +18,6 @@ const favoritoSlice = createSlice({
           (p) => p.id !== produto.id
         )
         state.itens = favoritosSemProduto
-        alert('Item já adicionado em favoritos')
       } else {
         state.itens.push(produto)
       }
